@@ -3,18 +3,13 @@ from talon.voice import Context, Key
 ctx = Context("symbol")
 
 keymap = {
-    "randall": Key("esc"),
     "(question [mark] | questo)": "?",
-    "(minus | dash)": "-",
     "plus": "+",
     "tilde": "~",
     "(bang | exclamation point | clamor)": "!",
     "(dollar [sign] | dolly)": "$",
     "(downscore | crunder)": "_",
-    "(semi | semicolon | sunk)": ";",
     "colon": ":",
-    "(square | left square [bracket] | brackorp)": "[",
-    "(rsquare | are square | right square [bracket] | brackose)": "]",
     "(paren | left paren | precorp)": "(",
     "(rparen | are paren | right paren | precose)": ")",
     "(brace | left brace | kirksorp)": "{",
@@ -83,9 +78,6 @@ keymap = {
     #'padded': (False, surround(" "), 1),
     "and sign": "&",
     "(dot dot | dotdot | doodle)": "..",
-    "(enter | shock)": Key("enter"),
-    "junk": Key("backspace"),
-    "spunk": Key("delete"),
     "sky turn": Key("shift-enter"),
 }
 

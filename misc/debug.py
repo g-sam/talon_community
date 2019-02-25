@@ -10,7 +10,7 @@ def listener(topic, m):
         print("[grammar reloaded]")
     elif topic == "cmd" and m["cmd"]['cmd'] == 'g.listset' and 'list' in m['cmd']:
         m['cmd']['items'] = len(m['cmd']['items'])
-        print('here', topic, m)
+        print(topic, m)
     else:
         if CRAZY:
             print(topic, m)
